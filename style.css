@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background:linear-gradient( to top ,#f944b0, #361033);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: white;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    width: 35%;
+}
+h1{
+    margin: 4px 0px;
+    font-size: 2.2rem;
+}
+.word {
+    margin: 14px 0px; 
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c42eb8;;
+    font-size: 19px;
+    display: flex;
+    align-self: center;
+}
+input{
+    margin: 20px 0px;
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+   border: 1px solid rgb(134, 129, 129);
+}
+.buttons{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button{
+    padding: 5px 8px;
+    border: none;
+color: white;
+font-size: 15px;
+cursor: pointer;
+border-radius: 4px;
+}
+.btn1{
+    background-color: gray;
+    
+}
+.btn2{
+    background-color: rgb(17, 150, 17);
+}
+.details{
+    width: 100%;
+}
+hr{
+    color: black;
+}
+
+
+
+@media (min-width:320px) and (max-width:480px) {
+    .main{
+        width: 70%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .word{
+        letter-spacing: 15px;
+    }
+}
+@media (max-width:320px) {
+    .main{
+        width: 80%;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    button{
+        padding: 3px 4px;
+        font-size: 14px;
+    }
+    .word{
+        font-size: 16px;
+        letter-spacing: 10px;
+    }
+}
